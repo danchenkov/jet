@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/CloudyKit/jet"
+	"github.com/CloudyKit/jet/v6"
 )
 
 func main() {
@@ -19,5 +19,5 @@ func main() {
 		})
 	})
 
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe("jet.test:8080", nil)
 }
